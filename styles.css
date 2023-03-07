@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+  	margin: 0;
+	background-color: lightblue;
+  }
+  
+  /* Estilo de la clase header (encabezado) */
+  .header {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  /* estilo de la barra de navegacion */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* estilo de los link de la barra de navegacion */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Cambio de color del link al pasar el mouse */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Crea dos columnas desiguales que floten una al lado de la otra */
+  .column {
+    float: left;
+    padding: 10px;
+  }
+  
+  /* estilo columna a */
+  .column.a {
+    width: 25%;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 17px;
+    margin-bottom: 25px;
+    
+  }
+  
+  /* Estilo columna b */
+  .column.b {
+    width: 75%;
+    font-size: 18px;
+    margin-bottom: 10px;    
+    	
+  }
+/* estilo del pie de pagina */
+.footer {
+  	background-color: #f1f1f1;
+  	padding: 5px;
+  	text-align: center;
+	position:fixed;
+	bottom:0;
+	right:0;
+        left:0;
+      }
+  /* borrar float cuando se pasa a un dispositvo de pantalla chica */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /*Diseño receptivo: hace que las dos columnas se apilen una encima de la otra en lugar de una al lado de la otra */
+  @media screen and (max-width: 600px) {
+    .column.a, .column.b {
+      width: 100%;
+    }
+	
+
+  }
