@@ -78,6 +78,18 @@
             width: 100%;
           }
         }
+        @media screen and (max-width: 600px) {
+          .topnav a {
+            float: none;
+            width: 100%;
+          }
+          @media screen and (max-width: 600px) {
+            #imagen1 {
+              float: none;
+            }
+          }
+
+        }
         p{
             font-size: 120%;
         }
